@@ -6,10 +6,10 @@ users.Add(new(1,"User 1"));
 users.Add(new(2,"User 2"));
 users.Add(new(3,"User 3"));
 
-app.MapGet("/users", GetUsers);
-app.MapGet("/users/{id}", GetUser);
-app.MapPost("/users", PostUser);
-app.MapDelete("/users/{id}", DeleteUser);
+app.MapGet("/api/users", GetUsers);
+app.MapGet("/api/users/{id}", GetUser);
+app.MapPost("/api/users", PostUser);
+app.MapDelete("/api/users/{id}", DeleteUser);
 
 app.Run();
 
